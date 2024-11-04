@@ -1,5 +1,3 @@
-let userName = "Usuário";
-
 document.getElementById('importBtn').addEventListener('click', function() {
     const fileInput = document.getElementById('fileInput');
     const file = fileInput.files[0];
@@ -48,7 +46,7 @@ function exportToXLSX(data) {
     const formattedDate = `${today.getFullYear()}-${(today.getMonth() + 1).toString().padStart(2, '0')}-${today.getDate().toString().padStart(2, '0')}`;
     
     // Nome do arquivo
-    const fileName = `Romaneio_${userName}_${formattedDate}.xlsx`;
+    const fileName = `Romaneio__${formattedDate}.xlsx`;
     
     // Cria uma nova planilha
     const ws = XLSX.utils.aoa_to_sheet(data); // Coloca os dados na nova planilha
