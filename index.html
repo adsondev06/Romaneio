@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Importar e Exportar XLSX</title>
+    <title>Gerar Romaneio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="nameModal">
+        <div class="modal-content">
+            <h2>Digite seu nome</h2>
+            <input type="text" id="userNameInput" placeholder="Digite seu nome" />
+            <button id="submitNameBtn">OK</button>
+        </div>
+    </div>
+
     <div class="container">
-        <h1>Importar Arquivo XLSX</h1>
+        <h1>Gerar Romaneio</h1>
         <input type="file" id="fileInput" accept=".xlsx" />
         <button id="importBtn">Importar</button>
-        <button id="exportBtn" style="display:none;">Exportar</button>
+        <button id="exportBtn" style="display:none;">Exportar Romaneio</button>
         <div id="output"></div>
     </div>
 
